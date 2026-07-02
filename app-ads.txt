@@ -1,0 +1,3 @@
+# app-ads.txt
+# This file will be used for mobile app advertising verification
+# Add your AdMob and other ad network publisher IDs here when your apps are published

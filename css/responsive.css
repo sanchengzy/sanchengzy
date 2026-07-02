@@ -1,0 +1,695 @@
+/* =====================================================
+   Beijing Sancheng Zhiyuan Enterprise Management Consulting Co., Ltd.
+   Responsive Stylesheet - Mobile-First Design
+   ===================================================== */
+
+/* =====================================================
+   Extra Small Devices (Portrait Phones)
+   ===================================================== */
+@media (max-width: 575.98px) {
+    /* Typography */
+    :root {
+        --font-size-6xl: 2.5rem;
+        --font-size-5xl: 2rem;
+        --font-size-4xl: 1.75rem;
+        --font-size-3xl: 1.5rem;
+        --font-size-2xl: 1.25rem;
+    }
+    
+    /* Container */
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+    
+    /* Sections */
+    .section {
+        padding: var(--spacing-3xl) 0;
+    }
+    
+    /* Header */
+    .header-inner {
+        padding: var(--spacing-sm) 0;
+    }
+    
+    .logo svg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .logo-text {
+        font-size: var(--font-size-base);
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 600px;
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-4xl);
+    }
+    
+    .hero-description {
+        font-size: var(--font-size-base);
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-lg {
+        padding: var(--spacing-md) var(--spacing-xl);
+        font-size: var(--font-size-base);
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    /* Stats */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+    
+    .stat-number {
+        font-size: var(--font-size-4xl);
+    }
+    
+    /* App Showcase */
+    .app-showcase {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .app-phone-mockup {
+        width: 240px;
+        height: 420px;
+        margin: 0 auto;
+    }
+    
+    .app-screenshots {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        padding: var(--spacing-xl);
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .footer-about {
+        max-width: 100%;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Page Header */
+    .page-header {
+        padding: 140px 0 60px;
+    }
+    
+    .page-header h1 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    /* Timeline */
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    
+    .timeline-item:nth-child(even) {
+        margin-left: 0;
+        padding-left: 50px;
+    }
+    
+    .timeline-dot {
+        left: 10px !important;
+        right: auto !important;
+    }
+    
+    /* Contact */
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+    
+    /* News */
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Legal Content */
+    .legal-content {
+        padding: var(--spacing-xl);
+    }
+    
+    /* CTA */
+    .cta-content h2 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Cards */
+    .card-content {
+        padding: var(--spacing-lg);
+    }
+    
+    /* Section Header */
+    .section-header {
+        margin-bottom: var(--spacing-2xl);
+    }
+    
+    .section-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .section-description {
+        font-size: var(--font-size-base);
+    }
+}
+
+/* =====================================================
+   Small Devices (Landscape Phones)
+   ===================================================== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Typography */
+    :root {
+        --font-size-6xl: 2.75rem;
+        --font-size-5xl: 2.25rem;
+        --font-size-4xl: 1.875rem;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: var(--font-size-5xl);
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* News */
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Timeline */
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    
+    .timeline-item:nth-child(even) {
+        margin-left: 0;
+        padding-left: 50px;
+    }
+    
+    .timeline-dot {
+        left: 10px !important;
+        right: auto !important;
+    }
+}
+
+/* =====================================================
+   Medium Devices (Tablets)
+   ===================================================== */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Typography */
+    :root {
+        --font-size-6xl: 3rem;
+        --font-size-5xl: 2.5rem;
+    }
+    
+    /* Container */
+    .container {
+        max-width: var(--container-md);
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 650px;
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Stats */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* App Showcase */
+    .app-showcase {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-2xl);
+    }
+    
+    .app-phone-mockup {
+        width: 260px;
+        height: 460px;
+        margin: 0 auto;
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact */
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+    
+    /* News */
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Timeline */
+    .timeline::before {
+        left: 50%;
+    }
+    
+    .timeline-item {
+        width: 50%;
+        padding-right: var(--spacing-2xl);
+    }
+    
+    .timeline-item:nth-child(even) {
+        margin-left: 50%;
+        padding-left: var(--spacing-2xl);
+        padding-right: 0;
+    }
+}
+
+/* =====================================================
+   Large Devices (Desktops)
+   ===================================================== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Container */
+    .container {
+        max-width: var(--container-lg);
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Stats */
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* App Showcase */
+    .app-showcase {
+        gap: var(--spacing-2xl);
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 2fr repeat(3, 1fr);
+    }
+    
+    /* News */
+    .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* =====================================================
+   Extra Large Devices (Large Desktops)
+   ===================================================== */
+@media (min-width: 1200px) {
+    /* Container */
+    .container {
+        max-width: var(--container-max);
+    }
+    
+    /* Services */
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Stats */
+    .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 2fr repeat(3, 1fr);
+    }
+    
+    /* News */
+    .news-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* =====================================================
+   Print Styles
+   ===================================================== */
+@media print {
+    /* Hide Non-Essential Elements */
+    .header,
+    .footer,
+    .scroll-top,
+    .scroll-indicator,
+    .particles,
+    .hero-buttons,
+    .cta-section,
+    nav,
+    .social-links,
+    .video-play-btn,
+    .btn {
+        display: none !important;
+    }
+    
+    /* Reset Backgrounds */
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .section {
+        padding: 20px 0 !important;
+        page-break-inside: avoid;
+    }
+    
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    /* Links */
+    a[href^="http"]::after {
+        content: " (" attr(href) ")";
+        font-size: 80%;
+        color: #666;
+    }
+    
+    /* Images */
+    img {
+        max-width: 100% !important;
+        page-break-inside: avoid;
+    }
+    
+    /* Container */
+    .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    
+    /* Cards */
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #ddd;
+    }
+    
+    /* Legal Content */
+    .legal-content {
+        box-shadow: none !important;
+    }
+}
+
+/* =====================================================
+   Accessibility - Reduced Motion
+   ===================================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .fade-in,
+    .fade-in-left,
+    .fade-in-right,
+    .fade-in-up,
+    .zoom-in,
+    .slide-in-bottom,
+    .stagger-item {
+        opacity: 1;
+        transform: none;
+    }
+    
+    .hero-pattern,
+    .particles,
+    .loading-dots span,
+    .loading-bar-progress,
+    .loading-spinner,
+    .scroll-indicator,
+    .scroll-indicator-wheel {
+        animation: none;
+    }
+    
+    .btn::before {
+        display: none;
+    }
+}
+
+/* =====================================================
+   Accessibility - High Contrast
+   ===================================================== */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #0044aa;
+        --secondary-color: #cc0000;
+        --dark-gray: #000000;
+        --medium-gray: #333333;
+        --light-gray: #eeeeee;
+        --white-color: #ffffff;
+    }
+    
+    .btn-primary {
+        border: 3px solid #000;
+    }
+    
+    .nav-link::after {
+        height: 4px;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    .card,
+    .service-card,
+    .testimonial-card {
+        border: 2px solid var(--dark-gray);
+    }
+}
+
+/* =====================================================
+   Touch Device Optimizations
+   ===================================================== */
+@media (hover: none) and (pointer: coarse) {
+    /* Remove Hover Effects on Touch Devices */
+    .service-card:hover,
+    .card:hover,
+    .news-card:hover,
+    .testimonial-card:hover {
+        transform: none;
+    }
+    
+    .btn:hover {
+        transform: none;
+    }
+    
+    /* Increase Touch Targets */
+    .nav-link,
+    .btn,
+    .footer-link,
+    .social-link {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    /* Disable Some Animations */
+    .hero-pattern {
+        animation: none;
+    }
+    
+    /* Adjust Scroll Indicator */
+    .scroll-indicator {
+        display: none;
+    }
+    
+    /* Improve Card Interactions */
+    .card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* =====================================================
+   Dark Mode Support
+   ===================================================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* You can add dark mode variables here if needed */
+    }
+}
+
+/* =====================================================
+   Ultra-Wide Screens
+   ===================================================== */
+@media (min-width: 1800px) {
+    :root {
+        --font-size-6xl: 4.5rem;
+        --font-size-5xl: 3.5rem;
+        --font-size-4xl: 2.75rem;
+        --spacing-4xl: 8rem;
+    }
+    
+    .container {
+        max-width: 1600px;
+    }
+}
+
+/* =====================================================
+   Landscape Mode on Mobile
+   ===================================================== */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0;
+    }
+    
+    .hero-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .hero-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .btn-lg {
+        padding: var(--spacing-sm) var(--spacing-lg);
+        font-size: var(--font-size-sm);
+    }
+}
+
+/* =====================================================
+   Smart TV / Large Display
+   ===================================================== */
+@media (min-width: 1920px) {
+    :root {
+        --font-size-6xl: 5rem;
+        --font-size-5xl: 4rem;
+        --spacing-4xl: 10rem;
+    }
+    
+    .container {
+        max-width: 1800px;
+    }
+    
+    .section {
+        padding: var(--spacing-4xl) 0;
+    }
+}
+
+/* =====================================================
+   IE11 Specific Styles
+   ===================================================== */
+@media all and (-ms-high-contrast: none) {
+    *::-ms-backdrop,
+    .hero-pattern {
+        background: transparent;
+    }
+    
+    .btn::before {
+        display: none;
+    }
+    
+    .fade-in,
+    .fade-in-left,
+    .fade-in-right,
+    .fade-in-up,
+    .zoom-in,
+    .slide-in-bottom {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* =====================================================
+   Old Edge Specific Styles
+   ===================================================== */
+@supports (-ms-ime-align: auto) {
+    .hero-pattern {
+        animation: none;
+    }
+    
+    .btn::before {
+        display: none;
+    }
+}
